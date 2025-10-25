@@ -34,7 +34,7 @@ export default function SqlToJavaConverter() {
   };
 
   const snakeToCamel = (str: string) => {
-    return str.toLowerCase().replace(/_([a-z])/g, (match, letter) => letter.toUpperCase());
+    return str.toLowerCase().replace(/_([a-z])/g, (_match, letter) => letter.toUpperCase());
   };
 
   const snakeToPascal = (str: any) => {
